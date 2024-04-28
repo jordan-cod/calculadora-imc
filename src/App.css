@@ -1,0 +1,191 @@
+#root {
+  max-width: 522px;
+}
+header{
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 522px;
+}
+.title{
+  font-weight: bold;
+  font-size: 32px;
+}
+.card{
+  width: 522px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #A6A6A6;
+  color: white;
+}
+.card-header{
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  column-gap: 20px;
+  margin-bottom: 10px;
+}
+.card-title h1{
+  font-weight: bold;
+  font-size: 25px;
+}
+.card-title p{
+  font-size: 18px;
+}
+.card-title, .card-description{
+  text-align: left;
+}
+.card-emoji-container{
+  width: 76px;
+  height: 76px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-result{
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  text-align: right;
+}
+.resultado{
+  margin-top: 30px;
+}
+.legend-header{
+  width: 98%;
+  height: 62px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.legend-title h1{
+  font-weight: bold;
+  font-size: 20px;
+}
+.legend-title p{
+  font-size: 13px;
+}
+.legend-emoji-container{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.legend-emoji-container img{
+  width: 26px;
+  height: 26px;
+}
+
+.grid{
+  display: grid;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.legend-header:nth-child(6), .legend-header:nth-child(4), .legend-header:nth-child(2){
+  justify-self: end;
+}
+.form, .form div, .form div input, .form button{
+  width: 100%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 30px;
+}
+.form input{
+  border-radius: 10px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border: 2px solid transparent;
+}
+.form input:focus{
+  border: 2px solid #19c25f;
+}
+.form button{
+  background-color: #1BD96A;
+  border: none;
+  height: 42px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: background 0.2s ease;
+}
+.form button:hover{
+  background-color: #19c25f;
+}
+.imc-description{
+  margin: 30px 0px 20px 0px;
+  background: white;
+  border-radius: 10px ;
+  padding: 20px;
+}
+
+.warning{
+  color: red;
+}
+.error{
+  margin-top: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 552px) {
+  #root {
+    max-width: 100%;
+    padding: 0px 10px;
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+  header .title{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .card-title p {
+    font-size: 16px;
+  }
+  .card-result{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .card-result{
+    text-align: center;
+  }
+}
