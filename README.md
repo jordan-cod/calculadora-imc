@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Calculadora IMC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida usando React, Vite e TypeScript.
 
-Currently, two official plugins are available:
+## Sobre
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está abaixo do peso, com peso normal, com sobrepeso ou obesa. Ele é calculado dividindo o peso (em quilogramas) pela altura (em metros) ao quadrado.
 
-## Expanding the ESLint configuration
+Esta calculadora IMC permite que os usuários insiram sua altura e peso e calcula o IMC correspondente. Com base no IMC calculado, é exibida uma mensagem indicando se o usuário está abaixo do peso, com peso normal, com sobrepeso ou obeso.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como Executar o Projeto Localmente
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone este repositório:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+`git clone https://github.com/jordan-cod/calculadora-imc.git`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navegue até o diretório do projeto:
+
+`cd calculadora-imc`
+
+3. Instale as dependências:
+
+`npm install`
+
+4. Execute o projeto:
+
+`npm run dev`
+
+Isso iniciará o servidor de desenvolvimento. Você poderá acessar o projeto no seu navegador em [http://localhost:5173](http://localhost:5173).
+
+## Acesso Online
+
+Você pode acessar a calculadora IMC online através do seguinte link: [Calculadora IMC](https://calculadora-imc-seven-iota.vercel.app).
+
+## Autor
+
+[Gabriel Jordan](https://github.com/jordan-cod)
+
+## Licença
+
+Este projeto está licenciado sob a Licença [MIT](LICENSE).
