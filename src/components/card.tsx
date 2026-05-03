@@ -17,7 +17,7 @@ function Card(props: CardProps) {
         <>
             <div className='legend-header' style={{ backgroundColor: props.item.bgcolor }}>
                     <span className='legend-emoji-container'>
-                        <img src={`/assets/${props.item.icon}`}></img>
+                        <img src={`${import.meta.env.BASE_URL}assets/${props.item.icon}`}></img>
                     </span>
                     <div className='legend-title'>
                         <h1>{props.item.title}</h1>

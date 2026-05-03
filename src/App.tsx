@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <header>
-        <img src={'/assets/logo.svg'} className='logo' />
+        <img src={`${import.meta.env.BASE_URL}assets/logo.svg`} className='logo' />
         <span className='title'>Calcule seu IMC</span>
       </header>
       <div className='grid'>

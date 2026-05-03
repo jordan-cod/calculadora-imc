@@ -18,7 +18,7 @@ function Result(props: ResultProps) {
             <div className='card' style={{ backgroundColor: props.result.bgcolor }}>
                 <div className='card-header'>
                     <span className='card-emoji-container'>
-                        <img src={`/assets/${props.result.icon}`}></img>
+                        <img src={`${import.meta.env.BASE_URL}assets/${props.result.icon}`}></img>
                     </span>
                     <div className='card-title'>
                         <h1>{props.result.title}</h1>
